@@ -1,14 +1,11 @@
+import Articles from '../components/Articles'
 import { getAllPosts } from '../lib/posts'
 
 export default function Home ({ posts }) {
   return (
     <>
       <h1>Article</h1>
-      <ul>
-        {posts.map(posts => (
-          <li key={posts.slug}>{posts.title}</li>
-        ))}
-      </ul>
+      <Articles posts={posts} />
     </>
   )
 }
