@@ -37,6 +37,7 @@ export const getStaticProps = async ({ params }) => {
       rehypePlugins: [
         rehypeSlug,
         [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+        rehypeHighlight,
         rehypeHighlight
       ]
     }
