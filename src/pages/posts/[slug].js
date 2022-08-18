@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeHighlight from 'rehype-highlight'
 
 import { getPostFromSlug, getSlugs } from '../../lib/posts'
 import Youtube from '../../components/Youtube'
@@ -29,7 +32,15 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const { slug } = params
   const { content, meta } = getPostFromSlug(slug)
-  const mdxSource = await serialize(content)
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      rehypePlugins: [
+        rehypeSlug,
+        [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+        rehypeHighlight
+      ]
+    }
+  })
   return {
     props: {
       post: { source: mdxSource, meta }
