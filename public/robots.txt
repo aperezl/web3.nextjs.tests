@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://aperezl.com
+
+# Sitemaps
+Sitemap: https://aperezl.com/sitemap.xml

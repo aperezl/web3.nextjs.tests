@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -20,6 +21,7 @@
     "eslint-config-next": "12.2.5",
     "ipfs-core": "^0.15.4",
     "next-mdx-remote": "^4.1.0",
+    "next-sitemap": "^3.1.20",
     "postcss": "^8.4.16",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-highlight": "^5.0.2",
