@@ -19,7 +19,7 @@ export default function PostMD ({ post }) {
                 // <Link href={`/tags/${tag}`}>
                 //   {tag}
                 // </Link>
-                <span>-</span>
+                <span key={tag}>-</span>
               ))}
             </div>
             <div>&nbsp;&nbsp;·&nbsp;&nbsp;</div>
