@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Section1 ({ post }) {
   return (
@@ -7,8 +8,11 @@ export default function Section1 ({ post }) {
         <div className='group cursor-pointer grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-20 md:gap-y-0 items-center'>
           <div>
             <div className='overflow-hidden rounded-lg drop-shadow-lg'>
-              <img
-                src='https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+              <Image
+                height={1024}
+                width={1024}
+                layout='responsive'
+                src='/images/main.png'
                 alt='alt'
                 className='duration-300 ease-in group-hover:scale-110'
               />

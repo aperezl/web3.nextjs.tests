@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PostMD ({ post }) {
   return (
@@ -6,7 +7,10 @@ export default function PostMD ({ post }) {
       <Link href={`/posts/${post.slug}`}>
         <a className='group space-y-3'>
           <div className='overflow-hidden rounded-lg drop-shadow-lg'>
-            <img
+            <Image
+              width={512}
+              height={512}
+              layout='responsive'
               src='/images/img1.png'
               alt='alt'
               className='duration-300 ease-in group-hover:scale-110'

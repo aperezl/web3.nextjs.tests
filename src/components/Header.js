@@ -1,12 +1,15 @@
 import Link from 'next/link'
-
+import Image from 'next/image'
 export default function Header () {
   return (
     <header className='border-b border-gray-100 drop-shadow-sm sticky top-0 bg-white z-10'>
       <div className='max-w-screen-xl mx-auto py-5 px-5 md:px-0'>
         <div className='flex items-center justify-between'>
           <div>
-            <img
+            <Image
+              width={224}
+              height={224}
+              layout='responsive'
               className='w-56'
               alt='logo'
               src='https://imgs.search.brave.com/sDdwSP7CqSsiVR9qYjnTcSQdSnc9Ch8Ss7DVRRovBgw/rs:fit:1200:680:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvbm9k/ZWpzLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LnBuZw'
