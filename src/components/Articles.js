@@ -1,17 +1,16 @@
 import Link from 'next/link'
-import styles from '../styles/Articles.module.css'
 
 export default function Articles ({ posts }) {
   return (
     <>
-      <ul className={styles.list}>
+      <ul className=''>
         {posts.map(post => (
           <li key={post.slug}>
-            <div className={styles.title}>
+            <div className=''>
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
             </div>
             <p>{post.excerpt}</p>
-            <p className={styles.tags}>
+            <p className=''>
               {post.tags.map(tag => (
                 <Link key={tag} href={`/tags/${tag}`}>
                   {tag}

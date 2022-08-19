@@ -1,13 +1,11 @@
-import styles from '../styles/Youtube.module.css'
-
 export default function Youtube ({ id }) {
   return (
-    <div className={styles.container}>
+    <div className=''>
       <iframe
         src={`https://www.youtube.com/embed/${id}`}
         allow='autoplay; encrypted-media'
         title='Embedded Youtube Video'
-        className={styles.frame}
+        className=''
       ></iframe>
     </div>
   )

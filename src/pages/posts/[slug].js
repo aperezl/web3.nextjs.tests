@@ -9,14 +9,18 @@ import rehypeHighlight from 'rehype-highlight'
 import { getPostFromSlug, getSlugs } from '../../lib/posts'
 import Youtube from '../../components/Youtube'
 
+import Header from '../../components/Header'
+import PostImage from '../../components/PostImage'
+
 export default function PostPage ({ post }) {
   return (
     <>
       <Head>
         <title>{post.meta.title}</title>
       </Head>
+      <Header />
       <h1>{post.meta.title}</h1>
-      <MDXRemote {...post.source} components={{ Youtube, Image }} />
+      <MDXRemote {...post.source} components={{ Youtube, Image, PostImage }} />
     </>
   )
 }
