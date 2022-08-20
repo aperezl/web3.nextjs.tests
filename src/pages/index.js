@@ -1,6 +1,7 @@
 import Articles from '../components/Articles'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Hero from '../components/Hero'
 import Section1 from '../components/Section1'
 import Section2 from '../components/Section2'
 import Section3 from '../components/Section3'
@@ -12,6 +13,7 @@ export default function Home ({ posts }) {
   return (
     <>
       <Header />
+      <Hero />
       <Section1 post={mainPost} />
       <Section2 posts={otherPosts} />
       <Section3 />

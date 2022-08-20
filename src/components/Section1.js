@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Section1 ({ post }) {
   return (
-    <section className='bg-gray-50 px-5 py-10 md:py-32'>
+    <section className='bg-[#ecf1ea] px-5 py-10 md:py-32'>
       <div className='max-w-screen-xl mx-auto'>
         <div className='group cursor-pointer grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-20 md:gap-y-0 items-center'>
           <div>

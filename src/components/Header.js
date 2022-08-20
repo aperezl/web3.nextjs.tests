@@ -5,13 +5,10 @@ export default function Header () {
     <header className='border-b border-gray-100 drop-shadow-sm sticky top-0 bg-white z-10'>
       <div className='max-w-screen-xl mx-auto py-5 px-5 md:px-0'>
         <div className='flex items-center justify-between'>
-          <div>
-            <img
-              className='w-56'
-              alt='logo'
-              src='https://imgs.search.brave.com/sDdwSP7CqSsiVR9qYjnTcSQdSnc9Ch8Ss7DVRRovBgw/rs:fit:1200:680:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvbm9k/ZWpzLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LnBuZw'
-            />
-          </div>
+          <h1 className='font-bold text-xl cursor-pointer'>
+            {'{'} antonio : <span className='text-[#2c682c]'>'perez'</span>{' '}
+            {'}'}
+          </h1>
           <div className='hidden md:block'>
             <ul className='flex items-center space-x-5 text-gray-500 font-semibold'>
               <li>

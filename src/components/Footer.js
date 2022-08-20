@@ -8,11 +8,10 @@ export default function Footer () {
           <div className='md:col-span-4'>
             <Link href='#'>
               <a className='mb-5'>
-                <img
-                  className='w-56'
-                  alt='logo'
-                  src='https://imgs.search.brave.com/sDdwSP7CqSsiVR9qYjnTcSQdSnc9Ch8Ss7DVRRovBgw/rs:fit:1200:680:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvbm9k/ZWpzLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LnBuZw'
-                />
+                <h1 className='font-bold text-2xl cursor-pointer'>
+                  {'{'} antonio :{' '}
+                  <span className='text-[#2c682c]'>'perez'</span> {'}'}
+                </h1>
               </a>
             </Link>
             <p className='text-gray-400 mt-5'>
