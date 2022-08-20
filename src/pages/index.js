@@ -12,7 +12,7 @@ export default function Home ({ posts }) {
       <Section1 post={mainPost} />
       <Section2 posts={otherPosts} />
       <h1>Article</h1>
-      <Articles posts={posts} />
+      {/* <Articles posts={posts} /> */}
     </>
   )
 }
