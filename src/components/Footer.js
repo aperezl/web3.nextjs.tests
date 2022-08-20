@@ -10,7 +10,10 @@ export default function Footer () {
               <a className='mb-5'>
                 <h1 className='font-bold text-2xl cursor-pointer'>
                   {'{'} antonio :{' '}
-                  <span className='text-[#2c682c]'>'perez'</span> {'}'}
+                  <span className='text-[#2c682c]'>
+                    {"'"}perez{"'"}
+                  </span>{' '}
+                  {'}'}
                 </h1>
               </a>
             </Link>

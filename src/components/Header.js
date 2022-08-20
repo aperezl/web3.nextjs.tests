@@ -5,8 +5,11 @@ export default function Header () {
     <header className='border-b border-gray-100 drop-shadow-sm sticky top-0 bg-white z-10'>
       <div className='max-w-screen-xl mx-auto py-5 px-5 md:px-0'>
         <div className='flex items-center justify-between'>
-          <h1 className='font-bold text-xl cursor-pointer'>
-            {'{'} antonio : <span className='text-[#2c682c]'>'perez'</span>{' '}
+          <h1 className='font-bold text-2xl cursor-pointer'>
+            {'{'} antonio :{' '}
+            <span className='text-[#2c682c]'>
+              {"'"}perez{"'"}
+            </span>{' '}
             {'}'}
           </h1>
           <div className='hidden md:block'>
