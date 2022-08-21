@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  @apply text-[#2c682c] no-underline;
+}
+
+.post {
+  @apply leading-7 text-lg;
+}
+.post p,
+.post code,
+.post ul {
+  @apply mb-8;
+}
+
+.post code {
+  @apply rounded-lg text-base;
+}
+.post a {
+  @apply font-semibold;
+}
+.post h1 {
+    @apply mb-5 text-5xl;
+}
+
+.post h2 {
+    @apply my-4 text-4xl;
+}
+
+
 .parallax > use {
   animation: move-forever 200s cubic-bezier(.55,.5,.45,.5)     infinite;
 }

@@ -5,13 +5,15 @@ export default function Header () {
     <header className='border-b border-gray-100 drop-shadow-sm sticky top-0 bg-white z-10'>
       <div className='max-w-screen-xl mx-auto py-5 px-5 md:px-0'>
         <div className='flex items-center justify-between'>
-          <h1 className='font-bold text-2xl cursor-pointer'>
-            {'{'} antonio :{' '}
-            <span className='text-[#2c682c]'>
-              {"'"}perez{"'"}
-            </span>{' '}
-            {'}'}
-          </h1>
+          <Link href='/'>
+            <a className='font-bold text-2xl cursor-pointer'>
+              {'{'} antonio :{' '}
+              <span className='text-[#2c682c]'>
+                {"'"}perez{"'"}
+              </span>{' '}
+              {'}'}
+            </a>
+          </Link>
           <div className='hidden md:block'>
             <ul className='flex items-center space-x-5 text-gray-500 font-semibold'>
               <li>

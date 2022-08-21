@@ -19,7 +19,7 @@ export default function PostMD ({ post }) {
         <Link href={`/posts/${post.slug}`}>
           <div className='overflow-hidden cursor-pointer rounded-lg drop-shadow-lg'>
             <img
-              src='/images/img1.png'
+              src={`/images/${post.slug}/${post.image}`}
               alt='alt'
               className='duration-300 ease-in group-hover:scale-110'
             />

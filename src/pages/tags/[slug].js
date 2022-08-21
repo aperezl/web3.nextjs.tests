@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Articles from '../../components/Articles'
+import Section4, { TagPost } from '../../components/Section4'
 import { getAllPosts } from '../../lib/posts'
 
 export default function TagPage ({ posts, slug }) {
@@ -9,7 +10,14 @@ export default function TagPage ({ posts, slug }) {
       <Head>
         <title>{title}</title>
       </Head>
-      <h1>Tag: {slug}</h1>
+      <section className='bg-[#ecf1ea] px-5 py-10 md:py-32 post'>
+        <div className='max-w-screen-xl mx-auto'>
+          <h1>Tag: {slug}</h1>
+          {posts.map(post => (
+            <TagPost post={post} />
+          ))}
+        </div>
+      </section>
       <Articles posts={posts} />
     </>
   )

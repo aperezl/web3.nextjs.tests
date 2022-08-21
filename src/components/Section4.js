@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function FeaturedPost () {
+export function FeaturedPost () {
   return (
     <div className='mt-5'>
       <div>
@@ -24,6 +24,43 @@ function FeaturedPost () {
                 </div>
               </div>
               <img src='/images/img1.png' alt='' className='rounded-lg' />
+            </a>
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function TagPost ({ post }) {
+  console.log({ post })
+  return (
+    <div className='mt-5'>
+      <div>
+        <div>
+          <Link href='#'>
+            <a className='grid grid-cols-12'>
+              <div className='h-full flex flex-1 flex-col justify-center space-y-2 mr-10 col-span-6 col-start-2'>
+                <div className='uppercase text-indigo-600 font-semibold'>
+                  Category
+                </div>
+                <h4 className='font-semibold text-gray-900 text-lg'>
+                  {post.title}
+                </h4>
+                <p className='text-sm text-gray-600'>{post.excerpt}</p>
+                <div className='flex items-center text-gray-500 text-sm space-x-1'>
+                  <div>Read more</div>
+                </div>
+              </div>
+              <img
+                src={
+                  post.image
+                    ? `/images/${post.slug}/${post.image}`
+                    : '/images/img1.png'
+                }
+                alt=''
+                className='rounded-lg col-span-2 col-end-11'
+              />
             </a>
           </Link>
         </div>
@@ -67,6 +104,15 @@ export default function Section4 () {
         </div>
         <div className=''>
           <h4 className='font-bold text-lg mb-2'>Featured</h4>
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
+          <FeaturedPost />
           <FeaturedPost />
           <FeaturedPost />
           <FeaturedPost />

@@ -9,7 +9,6 @@ import rehypeHighlight from 'rehype-highlight'
 import { getPostFromSlug, getSlugs } from '../../lib/posts'
 import Youtube from '../../components/Youtube'
 
-import Header from '../../components/Header'
 import PostImage from '../../components/PostImage'
 
 export default function PostPage ({ post }) {
@@ -18,9 +17,15 @@ export default function PostPage ({ post }) {
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <Header />
-      <h1>{post.meta.title}</h1>
-      <MDXRemote {...post.source} components={{ Youtube, Image, PostImage }} />
+      <section className='bg-[#ecf1ea] px-5 py-8 post'>
+        <div className='max-w-screen-lg mx-auto bg-white p-8 rounded-lg'>
+          <h1>{post.meta.title}</h1>
+          <MDXRemote
+            {...post.source}
+            components={{ Youtube, Image, PostImage }}
+          />
+        </div>
+      </section>
     </>
   )
 }
