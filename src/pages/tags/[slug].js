@@ -14,7 +14,7 @@ export default function TagPage ({ posts, slug }) {
         <div className='max-w-screen-xl mx-auto'>
           <h1>Tag: {slug}</h1>
           {posts.map(post => (
-            <TagPost post={post} />
+            <TagPost key={post.key} post={post} />
           ))}
         </div>
       </section>
