@@ -13,6 +13,7 @@ export default function TagPage ({ posts, slug }) {
       <section className='bg-[#ecf1ea] px-5 py-10 md:py-32 post'>
         <div className='max-w-screen-xl mx-auto'>
           <h1>Tag: {slug}</h1>
+          <Section4 />
           {posts.map(post => (
             <TagPost key={post.key} post={post} />
           ))}

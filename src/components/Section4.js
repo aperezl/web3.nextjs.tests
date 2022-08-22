@@ -23,7 +23,11 @@ export function FeaturedPost () {
                   <div>Read more</div>
                 </div>
               </div>
-              <img src='/images/img1.png' alt='' className='rounded-lg' />
+              <img
+                src='/images/img1.png'
+                alt=''
+                className='rounded-lg h-48 w-full object-cover object-center'
+              />
             </a>
           </Link>
         </div>
@@ -59,7 +63,7 @@ export function TagPost ({ post }) {
                     : '/images/img1.png'
                 }
                 alt=''
-                className='rounded-lg col-span-2 col-end-11'
+                className='rounded-lg col-span-2 col-end-11 object-cover'
               />
             </a>
           </Link>
@@ -77,7 +81,11 @@ export default function Section4 () {
           <div>
             <Link href='#'>
               <a className='inline-block'>
-                <img src='/images/img1.png' alt='' className='rounded-lg' />
+                <img
+                  src='/images/img1.png'
+                  alt=''
+                  className='rounded-lg h-96 w-full object-cover object-center'
+                />
                 <div className='space-y-5 py-5'>
                   <div className='flex items-center text-sm'>
                     <div className='text-indigo-600'>Managment</div>
@@ -104,15 +112,6 @@ export default function Section4 () {
         </div>
         <div className=''>
           <h4 className='font-bold text-lg mb-2'>Featured</h4>
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
-          <FeaturedPost />
           <FeaturedPost />
           <FeaturedPost />
           <FeaturedPost />

@@ -17,11 +17,11 @@ export default function PostMD ({ post }) {
     <>
       <div className='group space-y-3'>
         <Link href={`/posts/${post.slug}`}>
-          <div className='overflow-hidden cursor-pointer rounded-lg drop-shadow-lg'>
+          <div className='overflow-hidden cursor-pointer rounded-lg drop-shadow-lg h-64'>
             <img
               src={`/images/${post.slug}/${post.image}`}
               alt='alt'
-              className='duration-300 ease-in group-hover:scale-110'
+              className='duration-300 ease-in group-hover:scale-110 object-center'
             />
             <div className='absolute top-0 left-0 bottom-0 right-0 bg-gray-900 opacity-10 group-hover:opacity-60 duration-800 transition ease-in'></div>
           </div>
